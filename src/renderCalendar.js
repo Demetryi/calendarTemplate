@@ -10,10 +10,9 @@ export function renderCalendar(currentDate) {
   ).getDate();
 
   const chosenMonth = document.querySelector(".chosenMonth");
-  chosenMonth.innerHTML = dateFormatter
-    .format(new Date(currentDate))
-    .replace(",", "")
-    .split(" ")[1];
+  chosenMonth.innerHTML = `${
+    dateFormatter.format(new Date(currentDate)).replace(",", "").split(" ")[1]
+  } ${new Date(currentDate).getFullYear()}`;
 
   for (let i = 1; i <= daysInCurrentMonth; i++) {
     let chosenDate = new Date(
@@ -32,4 +31,9 @@ export function renderCalendar(currentDate) {
         </td>`;
   }
   outputCalendar.innerHTML = outputCalendarHTML;
+  const tdSum = document.createElement("td");
+  const tdSumText = document.createTextNode("Sum");
+  tdSum.appendChild(tdSumText);
+  tdSum.classList.add("outputItem", "outputSum");
+  outputCalendar.appendChild(tdSum);
 }

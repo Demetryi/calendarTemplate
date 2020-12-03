@@ -19,13 +19,14 @@ body {
 .chosenMonth {
   font-size: 32px;
   margin: 5vh 51px;
-  min-width: 160px;
+  min-width: 250px;
   display: flex;
   justify-content: center;
 }
 
 .outputCalendar {
   display: flex;
+  min-width: 1088px;
 }
 
 .outputDay {
@@ -104,4 +105,10 @@ body {
   right: -2px;
   top: -2px;
   transform: rotate(45deg);
+}
+
+.outputSum {
+  background: #f0f0f0;
+  font-size: 12px;
+  justify-content: center;
 }
