@@ -18,9 +18,10 @@ body {
 
 .chosenMonth {
   font-size: 32px;
-  margin: 35px 50px 25px;
-  padding: 0 5px 0 5px;
-  min-width: 110px;
+  margin: 5vh 51px;
+  min-width: 160px;
+  display: flex;
+  justify-content: center;
 }
 
 .outputCalendar {
@@ -58,21 +59,22 @@ body {
   background: #f0f0f0;
 }
 
-.month-changer{
+.month-changer {
   display: flex;
 }
 
-.arrow{
+.arrow {
   background: #000;
   height: 2px;
   width: 9px;
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  top: 60px;
+  top: 57px;
 }
 
-.arrow:before, .arrow:after {
+.arrow:before,
+.arrow:after {
   content: "";
   background: #000;
   position: absolute;
@@ -103,4 +105,3 @@ body {
   top: -2px;
   transform: rotate(45deg);
 }
-
