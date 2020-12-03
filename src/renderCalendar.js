@@ -30,10 +30,8 @@ export function renderCalendar(currentDate) {
         <span class="outputDate">${date}</span>
         </td>`;
   }
+  outputCalendarHTML += `<td class="outputItem outputSum">
+          <span>Sum</span> 
+        </td>`;
   outputCalendar.innerHTML = outputCalendarHTML;
-  const tdSum = document.createElement("td");
-  const tdSumText = document.createTextNode("Sum");
-  tdSum.appendChild(tdSumText);
-  tdSum.classList.add("outputItem", "outputSum");
-  outputCalendar.appendChild(tdSum);
 }

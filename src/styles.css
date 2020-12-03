@@ -41,13 +41,14 @@ body {
 .outputDate {
   text-align: center;
   color: rgb(56, 56, 56);
-  font-size: 14;
+  font-size: 14px;
 }
 
 .outputItem {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 34px;
   padding: 8px 6px;
   border: 1px solid rgb(192, 192, 192);
@@ -62,6 +63,7 @@ body {
 
 .month-changer {
   display: flex;
+  align-items: center;
 }
 
 .arrow {
@@ -71,7 +73,6 @@ body {
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  top: 57px;
 }
 
 .arrow:before,
@@ -110,5 +111,4 @@ body {
 .outputSum {
   background: #f0f0f0;
   font-size: 12px;
-  justify-content: center;
 }

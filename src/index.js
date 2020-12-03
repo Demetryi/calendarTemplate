@@ -6,7 +6,7 @@ let currentDate = new Date();
 renderCalendar(currentDate);
 monthChanger();
 
-/*
+
 const departmentTeams = [
   {
     name: "Frontend Team",
@@ -14,4 +14,3 @@ const departmentTeams = [
     members: [{ name: "FE_Team_User1" }],
   },
 ];
-*/
