@@ -18,12 +18,15 @@ body {
 
 .chosenMonth {
   font-size: 32px;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin: 5vh 51px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 .outputCalendar {
   display: flex;
+  min-width: 1088px;
 }
 
 .outputDay {
@@ -55,4 +58,57 @@ body {
 
 .weekend {
   background: #f0f0f0;
+}
+
+.month-changer {
+  display: flex;
+}
+
+.arrow {
+  background: #000;
+  height: 2px;
+  width: 9px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  top: 57px;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  background: #000;
+  position: absolute;
+  height: 2px;
+  width: 7px;
+}
+
+.left-arrow:before {
+  right: 4px;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.left-arrow:after {
+  right: 4px;
+  top: -2px;
+  transform: rotate(-45deg);
+}
+
+.right-arrow:before {
+  right: -2px;
+  bottom: -2px;
+  transform: rotate(-45deg);
+}
+
+.right-arrow:after {
+  right: -2px;
+  top: -2px;
+  transform: rotate(45deg);
+}
+
+.outputSum {
+  background: #f0f0f0;
+  font-size: 12px;
+  justify-content: center;
 }
