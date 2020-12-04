@@ -9,20 +9,23 @@ body {
 }
 
 #app {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
   align-items: center;
 }
 
 .chosenMonth {
-  font-size: 32px;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5vh 15px;
+  min-width: 140px;
+  text-align: center;
 }
 
 .outputCalendar {
+  display: flex;
+}
+table tr{
   display: flex;
 }
 
@@ -50,9 +53,84 @@ body {
   border: 1px solid rgb(192, 192, 192);
 }
 .outputItem:not(:first-of-type) {
-  border-left: none;
+  border-right: none;
 }
 
 .weekend {
   background: #f0f0f0;
+}
+
+.outputItem {
+  width: 34px;
+  min-height: 34px;
+}
+.sumHead{
+  width: 47px;
+  min-height: 34px;
+  border: 1px solid rgb(192, 192, 192);
+}
+.employeeHeader, .groupHeader{
+  min-width: 215px;
+  border: 1px solid rgb(192, 192, 192);
+  text-align: left;
+  padding: 5px 10px;
+}
+.team-table{
+  margin-bottom: 60px;
+}
+
+.month-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.month-picker button {
+  background-color: transparent;
+  display: inline;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+.month-picker button:hover {
+  cursor: pointer;
+}
+.month-picker button:focus {
+  outline: none;
+}
+
+.table-btn{
+  width: 145px;
+  height: 40px;
+  background:#48BA46;
+  color:white;
+  border-color: transparent;
+  border-radius: 7px;
+  margin-right: 70px;
+  margin-bottom: 10px;
+  font-size:14px;
+  line-height: 21px;
+}
+.table-btn:hover {
+  cursor: pointer;
+}
+
+.table__sum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 8px 6px;
+  background: #f0f0f0;
+}
+.invisible{
+  display: none;
+}
+.icon-chevron-down-solid {
+  padding: 5px 15px;
+}
+.icon-chevron-down-solid:hover {
+  cursor: pointer;
+}
+.transform-arrow {
+  transform: rotate(180deg);
 }
