@@ -1,4 +1,5 @@
 import { renderCalendar } from "./renderCalendar";
+import { addDepartmentTeams } from "./addDepartmentTeams";
 
 export function monthChanger() {
   const arrowsParent = document.querySelector(".month-changer");
@@ -13,10 +14,12 @@ export function monthChanger() {
       reduceValue -= 1;
       monthReducer(reduceValue);
       renderCalendar(selectedDate);
+      addDepartmentTeams(selectedDate);
     } else if (target && target.matches("span.right-arrow")) {
       reduceValue += 1;
       monthReducer(reduceValue);
       renderCalendar(selectedDate);
+      addDepartmentTeams(selectedDate);
     }
   });
 
