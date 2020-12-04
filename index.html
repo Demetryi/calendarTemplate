@@ -11,12 +11,18 @@
 
 <body>
 <div id="app">
-  <p class="chosenMonth"></p>
-  <table>
-    <thead>
-    <tr class="outputCalendar"></tr>
-    </thead>
-  </table>
+    <div class="month-changer">
+        <span class="left-arrow arrow"></span>
+        <p class="chosenMonth"></p>
+        <span class="right-arrow arrow"></span>
+    </div>
+    <table class="vacation-table">
+        <thead>
+        <tr class="outputCalendar"></tr>
+        </thead>
+        <tbody class="vacation-table__tbody">
+        </tbody>
+    </table>
 </div>
 
 <script src="src/index.js"></script>
